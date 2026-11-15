@@ -1,0 +1,180 @@
+[gd_scene format=3 uid="uid://7uodkx8qqagj"]
+
+[ext_resource type="Texture2D" path="res://cannon.png" id="1_0e48y"]
+[ext_resource type="Script" path="res://cannon.gd" id="2_0hol4"]
+[ext_resource type="Texture2D" path="res://swappy-20261114-225011.png" id="2_epypp"]
+[ext_resource type="Script" path="res://level2.gd" id="3_level2"]
+[ext_resource type="Texture2D" path="res://zombie_walking.png" id="5_q6r6c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a"]
+size = Vector2(138.34969, 32.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whf7s"]
+size = Vector2(1157, 43)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11run"]
+size = Vector2(135, 58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b"]
+size = Vector2(352, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c"]
+size = Vector2(40, 274.75)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("5_q6r6c")
+region = Rect2(0, 0, 43, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
+atlas = ExtResource("5_q6r6c")
+region = Rect2(43, 0, 43, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
+atlas = ExtResource("5_q6r6c")
+region = Rect2(86, 0, 43, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
+atlas = ExtResource("5_q6r6c")
+region = Rect2(129, 0, 43, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
+atlas = ExtResource("5_q6r6c")
+region = Rect2(172, 0, 43, 92)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
+atlas = ExtResource("5_q6r6c")
+region = Rect2(215, 0, 43, 92)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1afxi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6r6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d21ai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rj586")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4d7sh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="level2" type="Node2D" unique_id=1720933594]
+position = Vector2(-139, 18)
+script = ExtResource("3_level2")
+
+[node name="Cannon" type="Sprite2D" parent="." unique_id=1239577968]
+z_index = 100
+position = Vector2(680, 466.99997)
+scale = Vector2(0.36898142, 0.5616668)
+texture = ExtResource("1_0e48y")
+script = ExtResource("2_0hol4")
+
+[node name="Swappy20261114225011" type="Sprite2D" parent="." unique_id=51315380]
+position = Vector2(711.5, 293.49997)
+scale = Vector2(1.3841537, 1.4595186)
+texture = ExtResource("2_epypp")
+metadata/_edit_lock_ = true
+
+[node name="Barrier1" type="StaticBody2D" parent="." unique_id=673251724]
+position = Vector2(312, 443)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier1" unique_id=1567455062]
+position = Vector2(-105.17484, -90.25)
+shape = SubResource("RectangleShape2D_a")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Barrier1" unique_id=651632536]
+position = Vector2(691, -99)
+shape = SubResource("RectangleShape2D_a")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Barrier1" unique_id=220658802]
+position = Vector2(806, -101)
+shape = SubResource("RectangleShape2D_a")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Barrier1" unique_id=333224508]
+position = Vector2(385.5, -462)
+shape = SubResource("RectangleShape2D_whf7s")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Barrier1" unique_id=1682131604]
+position = Vector2(33, 97)
+shape = SubResource("RectangleShape2D_11run")
+
+[node name="Barrier2" type="StaticBody2D" parent="." unique_id=519025695]
+position = Vector2(800, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier2" unique_id=631177394]
+position = Vector2(-10, 235)
+shape = SubResource("RectangleShape2D_b")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Barrier2" unique_id=458665568]
+position = Vector2(-258, 240)
+shape = SubResource("RectangleShape2D_b")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Barrier2" unique_id=987428958]
+position = Vector2(-655, -133)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_b")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Barrier2" unique_id=1764473053]
+position = Vector2(-282, 268)
+shape = SubResource("RectangleShape2D_b")
+
+[node name="Barrier3" type="StaticBody2D" parent="." unique_id=1758128995]
+position = Vector2(950, 480)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier3" unique_id=1691485023]
+position = Vector2(-4, -8)
+shape = SubResource("RectangleShape2D_c")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Barrier3" unique_id=2039179624]
+position = Vector2(248, -102)
+shape = SubResource("RectangleShape2D_c")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Barrier3" unique_id=1682197135]
+position = Vector2(307, -387)
+shape = SubResource("RectangleShape2D_c")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Barrier3" unique_id=1409417350]
+position = Vector2(-686, -16)
+shape = SubResource("RectangleShape2D_c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1155181168]
+position = Vector2(212.375, 287.5)
+scale = Vector2(1.8895347, 1.2282608)
+sprite_frames = SubResource("SpriteFrames_1afxi")
+frame = 2
+frame_progress = 0.4275587
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1586866238]
+position = Vector2(337, 470)
+scale = Vector2(1.5930233, 1.1086956)
+sprite_frames = SubResource("SpriteFrames_1afxi")
+frame = 2
+frame_progress = 0.4275587
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=475470876]
+position = Vector2(1131, 182.00002)
+scale = Vector2(1.6627907, 1.5869565)
+sprite_frames = SubResource("SpriteFrames_1afxi")
+frame = 2
+frame_progress = 0.4275587
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="." unique_id=350319644]
+position = Vector2(984, 289)
+scale = Vector2(1.9244193, 1.2934783)
+sprite_frames = SubResource("SpriteFrames_1afxi")
+frame = 2
+frame_progress = 0.4275587

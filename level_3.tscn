@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://bfrxf2von8njg"]
+
+[ext_resource type="Texture2D" path="res://level1_background_v2.png" id="1_16pka"]
+[ext_resource type="Texture2D" path="res://cannon.png" id="2_j8bo8"]
+[ext_resource type="Texture2D" uid="uid://dide41g1xbyv8" path="res://brackeys_platformer_assets/sprites/slime_purple.png" id="3_1jdk1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6p2dc"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fmu3g"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ds5r"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_liaj6"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b60u5"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmy7e"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_833wy"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghrvs"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvy75"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(0, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0tlw"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(24, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_keufu"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(48, 48, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_joegk"]
+atlas = ExtResource("3_1jdk1")
+region = Rect2(72, 48, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1afxi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6p2dc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fmu3g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ds5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_liaj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b60u5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmy7e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_833wy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghrvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvy75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0tlw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_keufu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_joegk")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="level 3" type="Sprite2D" unique_id=1959273378]
+position = Vector2(576.99994, 326.12497)
+scale = Vector2(1.420792, 0.8734979)
+texture = ExtResource("1_16pka")
+
+[node name="Cannon" type="Sprite2D" parent="." unique_id=557483867]
+position = Vector2(-17.595774, 221.95251)
+scale = Vector2(0.6407665, 0.85871094)
+texture = ExtResource("2_j8bo8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=899223479]
+position = Vector2(-261.12192, 78.849686)
+scale = Vector2(4.9268293, 7.851905)
+sprite_frames = SubResource("SpriteFrames_1afxi")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=2075226799]
+position = Vector2(-261.8257, -164.9975)
+scale = Vector2(4.9268293, 7.851905)
+sprite_frames = SubResource("SpriteFrames_1afxi")
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="." unique_id=1195066098]
+position = Vector2(209.03848, -229.10756)
+scale = Vector2(4.9268293, 7.851905)
+sprite_frames = SubResource("SpriteFrames_1afxi")
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="." unique_id=1102611429]
+position = Vector2(221.00356, -63.108337)
+scale = Vector2(4.9268293, 7.851905)
+sprite_frames = SubResource("SpriteFrames_1afxi")
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="." unique_id=284007410]
+position = Vector2(-259.7143, -352.74838)
+scale = Vector2(4.9268293, 7.851905)
+sprite_frames = SubResource("SpriteFrames_1afxi")

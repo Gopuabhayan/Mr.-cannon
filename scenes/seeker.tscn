@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://chgarkvh1u12t"]
+
+[ext_resource type="Texture2D" uid="uid://bdnpwi6rrt3ij" path="res://art/background_clean.png" id="1_ehwld"]
+[ext_resource type="Texture2D" uid="uid://b2vuejneetdcd" path="res://art/cannon.png" id="3_euw15"]
+[ext_resource type="Script" uid="uid://dp3ciw4f07s7d" path="res://scripts/game.gd" id="4_game"]
+[ext_resource type="Script" uid="uid://unuu78t350oj" path="res://scripts/cannon.gd" id="5_cannon"]
+
+[node name="Game" type="Node2D" unique_id=2010752766]
+script = ExtResource("4_game")
+
+[node name="BackgroundClean" type="Sprite2D" parent="." unique_id=471708438]
+position = Vector2(576, 324)
+scale = Vector2(1.9072847, 1.8837209)
+texture = ExtResource("1_ehwld")
+
+[node name="Cannon" type="Node2D" parent="." unique_id=1215489821]
+position = Vector2(562, 512)
+script = ExtResource("5_cannon")
+
+[node name="Sprite2D" type="Sprite2D" parent="Cannon" unique_id=1942223020]
+position = Vector2(-1.9999999, -38)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_euw15")
